@@ -1,0 +1,28 @@
+Creating a virtual environment for Centos (Python3 and Pip3)
+
+1.First install epel repo.
+sudo yum install epel-release
+
+2.Next we want to install the basic Python 3.4 packages and setup tools.
+sudo yum install python34
+
+3.Don’t forget the devlopment package.  We’ll need that so pip can compile Python modules!
+sudo yum install python34-devel
+sudo yum install python34-setuptools
+
+4.Installing PIP3
+sudo easy_install-3.4 pip
+
+Now that we have Python3 and pip3 at our disposal lets create a virtualenv 
+
+1.Installables for the virtual environment
+sudo -H pip3 install virtualenv
+
+2.Go to where you want to create the virtualenv and run the command
+virtualenv <name>
+
+3.To activate:
+source bin/activate
+
+4.To deactivate:
+deactivate
